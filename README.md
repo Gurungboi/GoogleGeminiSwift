@@ -1,7 +1,3 @@
-Certainly! Here’s an improved version of the `README.md` for your project, tailored to fit the structure and style commonly seen on GitHub repositories:
-
----
-
 # GoogleGeminiSwift
 
 **GoogleGeminiSwift** is a SwiftUI project that showcases the integration of the Gemini SDK to create an AI-powered chatbot, inspired by the functionality of OpenAI's conversational models. This project is built with a focus on modularity, employing a separate local Swift Package Manager (SPM) package to handle the Gemini SDK integration. This approach not only improves code organization but also enhances scalability and maintainability.
