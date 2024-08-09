@@ -19,6 +19,7 @@
 		102B3E732C65CC800031FA86 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		102B3E752C65CC810031FA86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		102B3E782C65CC810031FA86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		102B3E822C65D06B0031FA86 /* Geminis */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Geminis; path = ../../../iOS/Geminis; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +36,7 @@
 		102B3E652C65CC800031FA86 = {
 			isa = PBXGroup;
 			children = (
+				102B3E802C65D0450031FA86 /* Packages */,
 				102B3E702C65CC800031FA86 /* GoogleGeminiSwift */,
 				102B3E6F2C65CC800031FA86 /* Products */,
 			);
@@ -65,6 +67,14 @@
 				102B3E782C65CC810031FA86 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		102B3E802C65D0450031FA86 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				102B3E822C65D06B0031FA86 /* Geminis */,
+			);
+			path = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
