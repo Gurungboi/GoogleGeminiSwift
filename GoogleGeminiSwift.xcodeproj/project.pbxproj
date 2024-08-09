@@ -11,6 +11,8 @@
 		102B3E742C65CC800031FA86 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102B3E732C65CC800031FA86 /* ContentView.swift */; };
 		102B3E762C65CC810031FA86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 102B3E752C65CC810031FA86 /* Assets.xcassets */; };
 		102B3E792C65CC810031FA86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 102B3E782C65CC810031FA86 /* Preview Assets.xcassets */; };
+		102B3E892C65D3280031FA86 /* APIKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102B3E882C65D3280031FA86 /* APIKeyManager.swift */; };
+		102B3E8F2C6612DB0031FA86 /* Geminis in Frameworks */ = {isa = PBXBuildFile; productRef = 102B3E8E2C6612DB0031FA86 /* Geminis */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		102B3E752C65CC810031FA86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		102B3E782C65CC810031FA86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		102B3E822C65D06B0031FA86 /* Geminis */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Geminis; path = ../../../iOS/Geminis; sourceTree = "<group>"; };
+		102B3E882C65D3280031FA86 /* APIKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyManager.swift; sourceTree = "<group>"; };
+		102B3E8C2C6611F70031FA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				102B3E8F2C6612DB0031FA86 /* Geminis in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +44,7 @@
 				102B3E802C65D0450031FA86 /* Packages */,
 				102B3E702C65CC800031FA86 /* GoogleGeminiSwift */,
 				102B3E6F2C65CC800031FA86 /* Products */,
+				102B3E8D2C6612DB0031FA86 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +59,8 @@
 		102B3E702C65CC800031FA86 /* GoogleGeminiSwift */ = {
 			isa = PBXGroup;
 			children = (
+				102B3E8C2C6611F70031FA86 /* Info.plist */,
+				102B3E872C65D30D0031FA86 /* Utilis */,
 				102B3E712C65CC800031FA86 /* GoogleGeminiSwiftApp.swift */,
 				102B3E732C65CC800031FA86 /* ContentView.swift */,
 				102B3E752C65CC810031FA86 /* Assets.xcassets */,
@@ -77,6 +85,21 @@
 			path = Packages;
 			sourceTree = "<group>";
 		};
+		102B3E872C65D30D0031FA86 /* Utilis */ = {
+			isa = PBXGroup;
+			children = (
+				102B3E882C65D3280031FA86 /* APIKeyManager.swift */,
+			);
+			path = Utilis;
+			sourceTree = "<group>";
+		};
+		102B3E8D2C6612DB0031FA86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -93,6 +116,9 @@
 			dependencies = (
 			);
 			name = GoogleGeminiSwift;
+			packageProductDependencies = (
+				102B3E8E2C6612DB0031FA86 /* Geminis */,
+			);
 			productName = GoogleGeminiSwift;
 			productReference = 102B3E6E2C65CC800031FA86 /* GoogleGeminiSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -147,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				102B3E892C65D3280031FA86 /* APIKeyManager.swift in Sources */,
 				102B3E742C65CC800031FA86 /* ContentView.swift in Sources */,
 				102B3E722C65CC800031FA86 /* GoogleGeminiSwiftApp.swift in Sources */,
 			);
@@ -285,6 +312,7 @@
 				DEVELOPMENT_TEAM = 63UXYZ8XVE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoogleGeminiSwift/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -314,6 +342,7 @@
 				DEVELOPMENT_TEAM = 63UXYZ8XVE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoogleGeminiSwift/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -354,6 +383,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		102B3E8E2C6612DB0031FA86 /* Geminis */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Geminis;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 102B3E662C65CC800031FA86 /* Project object */;
 }
